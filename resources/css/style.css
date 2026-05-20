@@ -147,8 +147,84 @@ h2::after{
     flex-grow: 1;
     padding: 1%;
 }
-
+ 
 .sec-information ion-icon{
     font-size: 350%;
     color: #E67E22;
 }
+
+h3{
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.infos p{
+    font-size: 90%;
+    line-height: 145%;
+    text-align: justify;
+}
+
+/*****************************/
+/********** GALERIA **********/
+/*****************************/
+
+.galery ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.galery>ul>li{
+    flex-basis: 250px;
+    flex-grow: 1;
+    /* Esaconder as partes das imagens que transbordam, 
+    ultrapassam os limites do container */
+    overflow: hidden;
+    background-color: #000;
+}
+
+.galery>ul>li img{
+    width: 100%;
+    transform: scale(1.15);
+    transition: 1s;
+    opacity: 0.8;
+}
+
+.galery>ul>li img:hover,
+.galery>ul>li img:active{
+    transform: scale(1.05);
+    opacity: 1;
+    /* filter: blur(2px);
+    filter: brightness(110%);
+    filter: contrast(120%) saturate(150%);
+    filter: grayscale(70%);
+    filter: sepia(100%);
+    filter: drop-shadow(8px 8px 10px gray); */
+}
+
+/*****************************/
+/********* GALERIA 2 *********/
+/*****************************/
+.galery-2>figure{
+    width: 70%;
+    height: 450px;
+    /* background-color: #555; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galery-2>figure>img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #E67E22;
+    border-radius: 10px;
+    transition: width ease-in-out 0.5s;
+}
+
+ .galery-2>figure>img:hover{
+    width: 55%;
+ }
